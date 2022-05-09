@@ -1,0 +1,67 @@
+.d-flex, .row {
+    display: flex;
+}
+.column {
+    flex-direction: column;
+}
+.jc-sb {
+    justify-content: space-between;
+}
+.jc-c {
+    justify-content: center;
+}
+.ai-c {
+    align-items: center;
+}
+.jc-ai-c {
+    justify-content: center;
+    align-items: center;
+}
+.wh-100 {
+    width: 100%;
+    height: 100%;
+}
+.fs-14 {
+    font-size: 0.875rem;
+}
+.fs-16 {
+    font-size: 1rem;
+}
+.gen-pad {
+    padding: 0 40px;
+}
+.all-pad {
+    padding: 40px;
+}
+.top-pad {
+    padding-top: 40px;
+}
+.upc {
+    text-transform: uppercase;
+}
+.h-format {
+    font-size: 1.8rem;
+    letter-spacing: 0.03125rem;
+}
+.icon-df {
+    color: orange;
+    margin-right: 5px;
+}
+.mr-10 {
+    margin-right: 40px;
+}
+.mt-10 {
+    margin-top: 40px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.67%;}
+.col-3 {width: 24.99%;}
+.col-4 {width: 33.32%;}
+.col-5 {width: 41.65%;}
+.col-6 {width: 49.98%;}
+.col-7 {width: 58.31%;}
+.col-8 {width: 66.64%;}
+.col-9 {width: 74.97%;}
+.col-10 {width: 83.3%;}
+.col-11 {width: 91.63%;}
+.col-12 {width: 99.96%;}
