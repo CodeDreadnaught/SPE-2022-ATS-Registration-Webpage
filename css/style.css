@@ -23,6 +23,7 @@ body {
 .landing-view {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/pexels-zukiman-mohamad-87236\ \(1\).jpg");
     background-size: cover;
+    height: 100vh;
 }
 .nav-bar {
     height: 100px;
@@ -44,6 +45,9 @@ body {
 }
 .nav-list-items a:hover {
     color: var(--spe-blue);
+}
+.hamburger {
+    display: none;
 }
 .dld-btn {
     padding: 0px 10px;
@@ -195,27 +199,6 @@ body {
     color: var(--spe-white);
     text-align: center;
 }
-.sponsor-logo {
-    flex-wrap: wrap;
-}
-.sponsor-logo img {
-    width: 100%;
-    height: 100%;
-}
-.sponsor-logo-items {
-    height: 160px;
-    border: 2px solid orange;
-    border-radius: 12px;
-    padding: 10px;
-}
-.sponsor-logo-items:hover {
-    border: transparent;
-    background: var(--spe-white);
-}
-.sponsor-logo-items:not(:last-child) {
-    margin-bottom: 10px;
-    margin-right: 10px;
-}
 .footer {
     background-color: #0a192f;
     color: var(--spe-white);
@@ -270,4 +253,93 @@ body {
     font-weight: bold;
     color: orange;
 }
-
+.sponsor-logo-container {
+    text-align: center;
+    margin-top: 20%;
+}
+.slider-container {
+    height: 100%;
+}
+.slider {
+    width: 100%;
+    height: 400px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+}
+.slides {
+    display: flex;
+    overflow-x: scroll;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: 400px;
+    margin-right: 0;
+    transform-origin: center center;
+    transform: scale(1);
+    scroll-snap-align: center;
+}
+.slide a {
+    position: absolute;
+    top: 48%;
+    width: 35px;
+    height: 35px;
+    border: solid red;
+    border-width: 0 4px 4px 0;
+    padding: 3px;
+}
+a.slide-prev {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    left: 5%;
+}
+a.slide-next {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    right: 5%;
+}
+.slider {
+    width: 600px;
+    height: 400px;
+    text-align: center;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+.slide a {
+    background: none;
+    border: none;
+}
+a.slide-prev, .slider::before {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    left: 5%;
+}
+a.slide-next, .slider::after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    right: 5%;
+}
+.slider::before, .slider::after, .slide-prev, .slide-next {
+    position: absolute;
+    top: 48%;
+    width: 35px;
+    height: 35px;
+    border: solid black;
+    border-width: 0 4px 4px 0;
+    padding: 3px;
+}
+.slider::before, .slider::after {
+    content: '';
+    z-index: 1;
+    background: none;
+    pointer-events: none;
+}
