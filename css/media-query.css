@@ -1,4 +1,4 @@
-@media screen and (max-width: 668px) and (min-width: 375px) {
+@media screen and (max-width: 670px) and (min-width: 200px) {
     .nav-bar {
         height: 8vh !important;
     }
@@ -47,16 +47,16 @@
         height: auto !important;
     }
     .hero-top-text {
-        font-size: 1rem !important;
+        font-size: 0.9rem !important;
     }
     .hero-heading {
-        font-size: 2.3rem !important;
+        font-size: 2.2rem !important;
     }
     .h-format {
-        font-size: 1.3rem !important;
+        font-size: 1.2rem !important;
     }
     .event-countdown-timer {
-        font-size: 1.1rem !important;
+        font-size: 1rem !important;
         text-align: center;
         padding-bottom: 5%;
     }
@@ -66,6 +66,9 @@
     }
     .mw-100 {
         width: 100% !important;
+    }
+    .eit-head {
+        font-size: 1.7rem !important;
     }
     .ei-image {
         height: 500px !important;
@@ -126,6 +129,26 @@
     .slide > img {
         width: 100% !important;
         height: 100% !important;
+    }
+    .slider::before {
+        position: absolute;
+        top: 40% !important;
+        left: 2.2% !important;
+        width: 30px !important;
+        height: 30px !important;
+        border: 1px solid orange !important;
+        border-width: 0 4px 4px 0 !important;
+        padding: 3px !important;
+    }
+    .slider::after {
+        position: absolute;
+        top: 40% !important;
+        right: 3% !important;
+        width: 30px !important;
+        height: 30px !important;
+        border: 1px solid orange !important;
+        border-width: 0 4px 4px 0 !important;
+        padding: 3px !important;
     }
     .footer-logo-section {
         display: flex;
