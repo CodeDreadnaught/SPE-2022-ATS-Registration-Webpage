@@ -5,6 +5,12 @@
     .gen-pad {
         padding: 0 20px !important;
     }
+    .wmt-40 {
+        padding-top: 20px !important;
+    }
+    .wmb-40 {
+        margin-bottom: 20px !important;
+    }
     .nav-logo {
         width: 45px !important;
         height: 35px !important;
@@ -42,6 +48,29 @@
     }
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
+    }
+    .reg-wrapper {
+        height: 50px;
+        width: 275px !important;
+        padding: 0px 10px;
+        right: -75px !important;
+        position: absolute;
+        top: 40px !important;
+        padding: 10px 0;
+    }
+    .reg-submenu {
+        background: var(--spe-blue);
+        position: absolute;
+        top: -155px !important;
+        left: 0vw !important;
+        padding: 0px 10px;
+        cursor: pointer;
+        color: var(--spe-white);
+        border: transparent;
+        text-align: center;
+        letter-spacing: 0.03125rem;
+        border-radius: 3px;
+        transition: 0.10s ease-in-out;
     }
     .landing-view {
         height: auto !important;
@@ -87,14 +116,29 @@
         flex-direction: column !important;
         width: 100% !important;
         align-items: center;
+        padding: 0 20px;
     }
     .presenters-wrapper {
         width: 100% !important;
         display: block !important;
     }
+    .card-image {
+        height: 140px !important;
+    }
+    .speaker-name {
+        font-size: 1rem !important;
+        color: var(--spe-blue);
+    }
+    .speaker-role {
+        font-size: 0.8rem !important;
+    }
+    .all-logo-wrapper {
+        width: 98% !important;
+        height: 225px !important;
+    }
     .card-profile {
         border-radius: 12px;
-        width: 100% !important;
+        width: 90% !important;
         height: 50% !important;
         padding: 10px;
         color: black;
@@ -107,48 +151,11 @@
     .sm-mb {
         margin-bottom: 40px;
     }
-    .slide {
-        height:400px !important;
-    }
     .sponsor-head {
         font-size: 1.1rem !important;
         font-weight: bold;
         letter-spacing: 0.03125rem;
         margin-bottom: 25px;
-    }
-    .slider {
-        height: 30vh !important;
-    }
-    .slides {
-        height: 31vh !important;
-        width: 68vw !important;
-    }
-    .slide {
-        height: 100% !important;
-    }
-    .slide > img {
-        width: 100% !important;
-        height: 100% !important;
-    }
-    .slider::before {
-        position: absolute;
-        top: 40% !important;
-        left: 2.2% !important;
-        width: 30px !important;
-        height: 30px !important;
-        border: 1px solid orange !important;
-        border-width: 0 4px 4px 0 !important;
-        padding: 3px !important;
-    }
-    .slider::after {
-        position: absolute;
-        top: 40% !important;
-        right: 3% !important;
-        width: 30px !important;
-        height: 30px !important;
-        border: 1px solid orange !important;
-        border-width: 0 4px 4px 0 !important;
-        padding: 3px !important;
     }
     .footer-logo-section {
         display: flex;
@@ -162,5 +169,178 @@
     }
     .fmb-10 {
         margin-bottom: 20px;
+    }
+    .logo-head {
+        font-size: 0.9rem !important;
+        font-weight: bold;
+        letter-spacing: 0.04125rem;
+        margin-bottom: 10px;
+    }
+    .logo-body {
+        margin-bottom: 0px !important;
+        font-size: 0.9rem !important;
+    }
+    .logo-head-wrapper {
+        width: 110px !important;
+        height: 80px !important;
+    }
+    .footer-wrapper {
+        margin-bottom: 20px !important;
+    }
+    .f-divider {
+        border-top: 1px solid gray;
+        margin-bottom: 20px !important;
+    }
+    .lh-c {
+        text-align: center;
+        font-weight: 100;
+        font-size: 0.7rem !important;
+    }
+}
+@media screen and (max-width: 915px) and (min-width: 671px) {
+    .hamburger {
+        display: block !important;
+    }
+    .nav-bar {
+        height: 10vh !important;
+    }
+    .gen-pad {
+        padding: 0 60px !important;
+    }
+    .wmt-40 {
+        padding-top: 60px !important;
+    }
+    .wmb-40 {
+        margin-bottom: 60px !important;
+    }
+    .nav-logo {
+        width: 65px !important;
+        height: 55px !important;
+    }
+    .nav-list {
+        position: fixed;
+        left: -100000vw;
+        top: 10vh;
+        flex-direction: column;
+        text-align: center;
+        background: #0a192f;
+        width: 80%;
+        z-index: 99;
+        border-radius: 2px;
+        text-align: center;
+        transition: 0.3s ease-in-out;
+    }
+    .nav-list-items {
+        margin: 10px 0;
+    }
+    .nav-list.active {
+        left: -2vw;
+    }
+    .landing-view {
+        height: auto !important;
+    }
+    .hero-top-text {
+        font-size: 1.2rem !important;
+    }
+    .hero-heading {
+        font-size: 2.2rem !important;
+    }
+    .h-format {
+        font-size: 1.4rem !important;
+    }
+    .event-countdown-timer {
+        font-size: 1.5rem !important;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+    .event-intro {
+        display: block !important;
+        height: auto !important;
+    }
+    .mw-100 {
+        width: 100% !important;
+    }
+    .all-pad {
+        padding: 60px !important;
+    }
+    .ei-image {
+        height: 1000px !important;
+    }
+    .kn-head {
+        font-size: 1.5rem !important;
+        font-weight: bold;
+        letter-spacing: 0.03125rem;
+        margin-bottom: 25px;
+        color: orange !important;
+    }
+    .card-profile-wrapper {
+        flex-direction: column !important;
+        width: 100% !important;
+        align-items: center;
+    }
+    .presenters-wrapper {
+        width: 100% !important;
+        display: block !important;
+    }
+    .card-profile {
+        border-radius: 12px;
+        width: 60% !important;
+        height: 50% !important;
+        padding: 10px;
+        color: black;
+        background: var(--spe-white);
+        text-align: center;
+        cursor: pointer;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    .sm-mb {
+        margin-bottom: 40px;
+    }
+    .sponsor-head {
+        font-size: 1.9rem !important;
+        font-weight: bold;
+        letter-spacing: 0.03125rem;
+        margin-bottom: 25px;
+    }
+    .all-logo-wrapper {
+        width: 100% !important;
+        height: 600px !important;
+    }
+    .footer-logo-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-wrapper {
+        text-align: center;
+        flex-direction: column !important;
+        margin-bottom: 30px !important;
+    }
+    .fmb-10 {
+        margin-bottom: 20px;
+    }
+    .reg-wrapper {
+        height: 50px;
+        width: 275px !important;
+        padding: 0px 10px;
+        right: -75px !important;
+        position: absolute;
+        top: 40px !important;
+        padding: 10px 0;
+    }
+    .reg-submenu {
+        background: var(--spe-blue);
+        position: absolute;
+        top: -155px !important;
+        left: 0vw !important;
+        padding: 0px 10px;
+        cursor: pointer;
+        color: var(--spe-white);
+        border: transparent;
+        text-align: center;
+        letter-spacing: 0.03125rem;
+        border-radius: 3px;
+        transition: 0.10s ease-in-out;
     }
 }

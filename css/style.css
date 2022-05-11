@@ -49,6 +49,62 @@ body {
 .hamburger {
     display: none;
 }
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+.reg-submenu {
+    background: var(--spe-blue);
+    position: absolute;
+    cursor: pointer;
+    color: var(--spe-white);
+    border: transparent;
+    text-align: center;
+    letter-spacing: 0.03125rem;
+    border-radius: 3px;
+    transition: 0.3s ease-in-out;
+    padding: 0 10px;
+}
+.rld-btn {
+    position: relative;
+    display: block;
+}
+.reg-wrapper {
+    height: 50px;
+    width: 274px;
+    padding: 0px 10px;
+    top: 40px;
+    position: absolute;
+    right: 0px;
+    padding: 10px 0;
+}
+.reg-submenu-items {
+    padding: 15px 0;
+}
+.reg-submenu-items:hover a {
+    color: orange;
+}
+.reg-submenu-items a:active {
+    color: red;
+}
+.reg-submenu-items:not(:last-child) {
+    border-bottom: 1px solid var(--spe-white);
+}
+.reg-submenu a {
+    text-decoration: none;
+    color: var(--spe-white);
+}
+.reg-submenu {
+    display: none;
+}
+.rld-btn:hover .reg-submenu {
+    display: block;
+}
 .dld-btn {
     padding: 0px 10px;
     cursor: pointer;
@@ -150,7 +206,6 @@ body {
     background: var(--spe-white);
     text-align: center;
     cursor: pointer;
-
 }
 .card-image {
     height: 195px;
@@ -186,10 +241,14 @@ body {
     font-size: 1rem;
     font-style: italic;
 }
+.all-logo-wrapper {
+    width: 60vw;
+    height: 80vh;
+}
 .sponsor-section {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../images/white-rig.jpg");
     background-size: cover;
-    background-attachment: fixed;;
+    background-attachment: fixed;
 }
 .sponsor-head {
     font-size: 1.9rem;
@@ -230,116 +289,4 @@ body {
 }
 .org {
     color: orange;
-}
-#register {
-    padding-top: 40px ;
-}
-.virtual-registration {
-    text-align: center;
-    margin-bottom: 40px;
-}
-.virtual-registration > a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    background: var(--spe-blue);
-    color: var(--spe-white)
-    border: 1px solid var(--spe-blue);
-    border-radius: 12px;
-    padding: 5px;
-    margin: 40px 0;
-    height: 200px;
-}
-.virtual-registration > a:hover {
-    font-weight: bold;
-    color: orange;
-}
-.sponsor-logo-container {
-    text-align: center;
-    margin-top: 20%;
-}
-.slider-container {
-    height: 100%;
-}
-.slider {
-    width: 100%;
-    height: 400px;
-    margin: 20px;
-    text-align: center;
-    border-radius: 20px;
-    position: relative;
-}
-.slides {
-    display: flex;
-    overflow-x: scroll;
-    position: relative;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-}
-.slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    width: 100%;
-    height: 400px;
-    margin-right: 0;
-    transform-origin: center center;
-    transform: scale(1);
-    scroll-snap-align: center;
-}
-.slide a {
-    position: absolute;
-    top: 48%;
-    width: 35px;
-    height: 35px;
-    border: solid red;
-    border-width: 0 4px 4px 0;
-    padding: 3px;
-}
-a.slide-prev {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    left: 5%;
-}
-a.slide-next {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    right: 5%;
-}
-.slider {
-    width: 600px;
-    height: 400px;
-    text-align: center;
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
-}
-.slide a {
-    background: none;
-    border: none;
-}
-a.slide-prev, .slider::before {
-    transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    left: 5%;
-}
-a.slide-next, .slider::after {
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    right: 5%;
-}
-.slider::before, .slider::after {
-    position: absolute;
-    top: 48%;
-    width: 35px;
-    height: 35px;
-    border: 1px solid blue;
-    border-width: 0 4px 4px 0;
-    padding: 3px;
-}
-.slider::before, .slider::after {
-    content: '';
-    z-index: 1;
-    background: none;
-    pointer-events: none;
 }

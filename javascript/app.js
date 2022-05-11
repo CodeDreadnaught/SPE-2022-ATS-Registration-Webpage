@@ -4,6 +4,8 @@ const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-list");
 const navBar = document.querySelector(".nav-bar");
 const navLink = document.querySelectorAll(".nav-link");
+const registerBtn = document.querySelector(".rld-btn");
+const regSubMenu = document.querySelector(".reg-wrapper"); 
 
 let countDownDate = new Date("May 14, 2022 10:00:00").getTime();
 let x = setInterval(() => {
@@ -22,6 +24,7 @@ let x = setInterval(() => {
 }, 1000);
 
 hamburger.addEventListener("click", mobileMenu);
+registerBtn.addEventListener("click", displayMenu);
 
 function mobileMenu() {
     hamburger.classList.toggle("active");
@@ -35,4 +38,8 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
     navBar.classList.remove("active");
+}
+
+function displayMenu () {
+    regSubMenu.classList.toggle("active");
 }
