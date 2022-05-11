@@ -53,6 +53,12 @@
 .mt-10 {
     margin-top: 40px;
 }
+.wmt-40 {
+    padding-top: 40px;
+}
+.wmb-40 {
+    margin-bottom: 40px;
+}
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.67%;}
 .col-3 {width: 24.99%;}
