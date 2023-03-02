@@ -18,6 +18,7 @@ html {
 :root {
     --spe-blue: #0067b1;
     --spe-white: #fff;
+    --spe-black: #000;
 }
 body {
     font-size: 16px;
